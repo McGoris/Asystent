@@ -1,0 +1,152 @@
+.option
+{
+
+	
+	border: 2px solid gray;
+	border-radius: 8px;
+	min-height: 40px;
+	margin-bottom: 8px;
+	padding-left: 20px;
+	
+	
+}
+
+
+
+#question
+{
+	min-height: 50px;
+	margin-bottom: 25px;
+	text-align: center;
+	border: 2px solid gray;
+	border-radius: 8px;
+	padding: 5px;
+	
+	
+}
+
+
+#pytanie
+{
+	border-style: solid;
+	border-radius: 10px;
+	min-height: 40px;
+	font-size: 14px;
+	font-family: 'Inconsolata', monospace;
+	text-align: center;
+	background-color: #007;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 20px;
+}
+
+
+#odpowiedzi
+{
+	
+	min-height: 120px;
+	font-size: 12px;
+	font-family: 'Inconsolata', monospace;
+	
+		
+}
+
+#plansza 
+{
+	width: 100%; 
+	margin-top: 10px; 
+	margin-bottom: 10px; 
+	text-align: center; 
+	font-size: 20px; 
+	min-height: 40px;
+	font-family: 'Inconsolata', monospace;
+
+	
+	
+}
+
+#szubienica
+{
+	
+	float: left; 
+	width: 50%; 
+	text-align: center; 
+	min-height: 125px;
+	
+	
+}
+
+#alfabet
+
+{
+	
+	width: 50%; 
+	text-align: center; 
+	min-height: 125px;
+	float: left;
+	
+}
+
+#pole1
+{
+	width: 80%;
+	float: left;
+	margin-top: 40px;
+	min-width: 40%;
+	
+}
+
+
+.odpowiedz
+
+{
+	cursor: pointer;
+	width: 45%;
+	height: 25px;
+	border-radius: 4px;
+	float: left;
+	margin: 3px;
+	padding: 3px;
+	border: 2px solid gray;
+	border-radius: 8px;
+}
+
+
+.litera
+
+{
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	padding: 2px;
+	margin: 2px;
+	border: 2px solid gray;
+	border-radius: 8px;
+	float: left;
+	cursor: pointer;
+	
+}
+
+.litera:hover
+{
+	background-color: #333;
+	
+	
+}
+
+.ui-btn:hover
+
+{
+	background-color: #008;
+	
+}
+
+.odpowiedz:hover
+{
+	background-color: #333;
+	
+	
+}
+
+
+

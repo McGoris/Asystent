@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<script src="js/pgb.js"></script>
+		<script src="js/quiz.js"></script>
+		<script src="js/kalk.js"></script>
+		<script src="cordova.js"></script>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	</head>
+	<body onload=" start(); ">
+		
+		<!-- Strona glowna  -->
+		<div data-role="page" id="pageone" align="center">
+		
+		
+		  <div data-role="header" data-position="fixed" style="background-color: #001;">
+			<h1><font color="#bbb"> ASYSTENT OBSERWACJI ASTRONOMICZNYCH. </font></h1>
+		  </div>
+		  
+		  
+		  <div data-role="main" class="ui-content" id="main" style="background-color: #050000;">
+			
+			<div style="background-color: #200; width: 70%; height: 15%;">
+			<a href="#kalkulator" style="text-decoration: none;"><button style="background-color: #250000;" onclick="WlaczQuiz(); " ><font color="#700"><i> PLAN OBSERWACJI </i> </font></button></a>
+			
+			</div>
+			<div style="background-color: #200; width: 70%; height: 15%;">
+			<a href="#wisielec" style="text-decoration: none; "><button style="background-color: #250000;"><font color="#700"><i>GRA ORION</i></font></button</a>
+			</div>
+			<div style="background-color: #200; width: 70%; height: 15%;">
+			<a onclick="OtworzStrone();" style="text-decoration: none; "><button style="background-color: #250000;"><font color="#700"><i> BLOG ASTRONOMICZNY </i></font></button</a>
+			
+			</div>
+			<div style="background-color: #200; width: 70%; height: 15%;">
+			<a href="#info" style="text-decoration: none;"><button style="background-color: #250000;"> <font color="#700"><i>O AUTORZE</i></font></button></a>
+			
+			</div>
+			<div style="background-color: #200; width: 70%; height: 15%;">
+			<a style="text-decoration: none;" onclick='exitApp();'><button style="background-color: #250000;"><font color="#700"><i>WYJDŹ</i></font></button></a>
+			</div>
+			
+
+			<br><br>
+			
+		
+			
+		  </div>
+		  <div data-role="footer" data-position="fixed" style="background-color: #772; ">
+		    
+		    <h1><font color="#111">(c) McGoris Polska </font></h1>
+		  </div> 
+		</div> 
+
+		<!-- Kalkulator -->
+		
+		<div data-role="page" id="kalkulator" style="background-color: #002;">
+		
+			<div data-role="header" data-position="fixed" style="background-color: #003;">
+				<h1><font color="#bbb"> Kalkulator </font></h1>
+				
+			</div>
+			<div data-role="main" class="ui-content">
+			
+				<div id="pole1" align="center">
+					<input type="number" id="pole"> </input>
+				
+				
+					<br>
+					<font color="#bbb">
+					<table border="0">
+						<tr><td>AU -> KM</td><td><input type="radio" id="au1" value="1" checked name="a" ></input></td>
+							</tr>
+						<tr><td>Pc -> KM</td><td><input type="radio" id="pc1" value="2" name="a"></input></td>
+							</tr>
+						<tr><td>Ly -> KM</td><td> <input type="radio" id="km1" value="3" name="a"></input></td>
+							</tr>
+						
+						<tr><td></td><td></td>
+							</tr>						
+							
+							
+						<tr><td>Pc -> AU</td><td><input type="radio" id="ly1" value="4" name="a"></input></td>
+							</tr>
+						<tr><td>Ly -> AU</td><td><input type="radio" id="au2" value="5" name="a"></input></td>
+							</tr>
+						<tr><td>KM -> AU</td><td><input type="radio" id="pc2" value="6" name="a"></input></td>
+							</tr>
+							
+							
+						<tr><td>Ly -> Pc</td><td> <input type="radio" id="km2" value="7" name="a"></input></td>
+							</tr>
+						<tr><td>AU -> Pc</td><td> <input type="radio" id="ly2" value="8" name="a"></input></td>
+							</tr>
+						<tr><td>KM -> Pc</td><td> <input type="radio" id="ly2" value="9" name="a"></input></td>
+							</tr>
+							
+							
+						<tr><td>Pc -> Ly</td><td> <input type="radio" id="ly2" value="10" name="a"></input></td>
+							</tr>
+						<tr><td>AU -> Ly</td><td> <input type="radio" id="ly2" value="11" name="a"></input></td>
+							</tr>
+						<tr><td>KM -> Ly</td><td> <input type="radio" id="ly2" value="12" name="a"></input></td>
+							</tr>
+					</table>
+					</font>
+					
+				<br>
+					
+				</div>
+				
+			
+			</div>
+			<div align="center">
+			<a href="#legenda" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #344836;"><font color="#bbb"> Legenda </font> </a>
+			<a class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #344836;" onclick="getValue();"><font color="#bbb"> Przelicz </font> </a>
+			<a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #565624;"><font color="#bbb"> Powrót do strony głównej </font> </a>
+			</div>
+				<br>
+			
+
+			
+			<div data-role="footer" style="background-color: #772;" data-position="fixed">
+			
+			<h1><font color="#000"> (c) McGoris Polska </font></h1>
+			
+		    </div> 
+		</div> 	
+
+		<!-- legenda -->
+		
+		
+		<div data-role="page" id="legenda" style="background-color: #002;">
+		
+			<div data-role="header" data-position="fixed" style="background-color: #003;">
+				<h1><font color="#bbb"> Legenda </font></h1>
+				
+			</div>
+			<div data-role="main" class="ui-content" >
+			
+			<font color="#bbb">
+				
+				AU - Jednostka astronomiczna 
+				<br>
+				1 AU = 149597871 km.
+				<br>
+				Jest to średnia odległość Ziemi od Słońca.
+				<br>
+				<br>
+				
+				Pc - Parsek
+				<br>
+				1 PC = 3,26 roku świetlnego
+				<br>
+				Jest to odległość, dla której 1 jednostka astronomiczna jest widoczna jako 1 sekunda kątowa.
+				<br>
+				<br>
+				Ly - Rok świetlny
+				<br>
+				1 Ly = 9460528400000 km = 63241 jednostek astronomicznych.
+				<br>
+				Jest to odległość, którą światło przemierza w ciągu roku.
+	
+				
+				
+				</font>	
+				<br>
+				<br>
+				<br>
+			<div align="center">	
+			<a href="#kalkulator" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #002;"><font color="#bbb"> Powrót </font> </a>	
+			</div>
+			</div>
+				
+			
+
+			
+			<div data-role="footer" style="background-color: #003;" data-position="fixed">
+			
+			<h1><font color="#bbb"> (c) McGoris Polska </font></h1>
+			
+		    </div> 
+		</div> 	
+		
+		
+		
+		
+		
+		<!-- informacje -->
+		
+		<div data-role="page" id="info" style="background-color: #001;">
+		
+			<div data-role="header" style="background-color: #003;">
+				<h1><font color="#bbb"> Autorzy </font></h1>
+				
+			</div>
+			
+			<div data-role="main" class="ui-content" align="center">
+				<font color="#bbb">
+				<table border="0" style="width: 50%; ">
+					<tr><td> Imię: </td><td style="text-align: right;"> Marcin </td></tr>
+					<tr><td> Nazwisko: </td><td style="text-align: right;"> Goryl </td></tr>
+				</table>
+					<br>
+					<br>
+				<table border="0" style="width: 50%; ">	
+					<tr><td> </td><td style="text-align: right;"> Astronomia </td></tr>
+					<tr><td> Hobby: </td><td style="text-align: right;"> Fotografia </td></tr>
+					<tr><td></td><td style="text-align: right;"> Informatyka </td></tr>
+				</table>
+					<br>
+					<br>
+				<table border="0" style="width: 50%; ">		
+					<tr><td> Wiek: </td><td style="text-align: right;"> 23 </td></tr>
+				</table>	
+				
+				<br>
+				<hr>
+				<br>
+				
+				<table border="0" style="width: 50%; ">
+					<tr><td> Imię: </td><td style="text-align: right;"> Mikołaj </td></tr>
+					<tr><td> Nazwisko: </td><td style="text-align: right;"> Kalina </td></tr>
+				</table>
+					<br>
+					<br>
+				<table border="0" style="width: 50%; ">	
+					<tr><td> </td><td style="text-align: right;"> Forex </td></tr>
+					<tr><td> Hobby: </td><td style="text-align: right;"> Inwestowanie </td></tr>
+					<tr><td></td><td style="text-align: right;"> Historia Europy </td></tr>
+				</table>
+					<br>
+					<br>
+				<table border="0" style="width: 50%; ">		
+					<tr><td> Wiek: </td><td style="text-align: right;"> 23 </td></tr>
+				</table>	
+				</font>
+				<br>
+				<br>
+				
+				<a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #274238;"><font color="#bbb" > Powrót do strony głównej </font></a>
+			</div>
+			
+			<div data-role="footer" data-position="fixed" style="background-color: #772;">
+				
+				<h1><font color="#111">(c) McGoris Polska </font></h1>
+			
+			</div> 
+			
+		</div>		
+		
+		<!-- Wisielec -->
+		
+		<div data-role="page" id="wisielec" style="background-color: #001;">
+		
+			<div data-role="header" style="background-color: #002;">
+				<h1><font color="#bbb"> Gra Orion </font></h1>
+				
+			</div>
+				<div data-role="main" class="ui-content">
+					
+					<div id="plansza">
+					
+					</div>
+					
+					<div id="szubienica">
+					
+						<img src="img/A0.jpg">
+					
+					
+					</div>
+					
+					<div id="alfabet">
+					
+					
+					
+					</div>
+					
+					
+					
+					<div style="clear:both;">
+					
+					</div>
+				
+				</div>
+				
+				<div align="center">
+					<a href="javascript:location.reload()" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #344836;"><font color="#aaa"> Odśwież </font> </a>
+					<a href="#zasady" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #344836;"><font color="#aaa"> Zasady Gry </font> </a>
+					<a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #565624;"><font color="#aaa"> Powrót do strony głównej </font> </a>
+				</div>
+				
+				
+				
+				
+			<div data-role="footer" style="background-color: #772; ">
+			
+			<h1><font color="#111">(c) McGoris Polska </font></h1>
+		  </div> 
+		</div> 
+		
+		
+	<!-- zasady gry --> 
+	
+	<div data-role="page" id="zasady" style="background-color: #001;">
+		
+			<div data-role="header" style="background-color: #003;">
+				<h1><font color="#bbb"> Gra Orion - Zasady </font></h1>
+				
+			</div>
+				<div data-role="main" class="ui-content">
+					
+				<font color="#bbb">
+
+				Twoim zadaniem jest odgadnąć słowo/zdanie, które jest zakryte pionowymi kreskami. 
+				<br>
+				Masz do wyboru wszystkie litery alfabetu. Jeżeli dana litera istnieje, wstawiana jest w odpowiednie miejsce.
+				<br>
+				Jeżeli dana litera nie występuje, wtedy rysują się gwiazdy gwiazdozbioru Oriona.
+				<br> 
+				Jeżeli uda ci się odgadnąć słowo/zdanie, wygrywasz.
+				<br>
+				Jeżeli nie uda ci się odgadnąć i narysuje się cała konstelacja Oriona, przegrywasz.
+
+				</font>	
+				<br>
+				
+				<div align="center">
+				<br><br><br>
+				<a href="#wisielec" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #003;"><font color="#bbb"> Powrót do gry </font> </a>
+				</div>
+				</div>
+				
+				
+				
+				
+			<div data-role="footer"  data-position="fixed" style="background-color: #003; ">
+			
+			<h1><font color="#bbb">(c) McGoris Polska </font></h1>
+		  </div> 
+		</div> 
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
