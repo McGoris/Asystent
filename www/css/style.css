@@ -104,6 +104,7 @@
 }
 
 
+
 .odpowiedz
 
 {
@@ -155,5 +156,14 @@
 	
 }
 
+.ui-btn
+{
+	border: 0px;
+}
+
+.ui-content
+{
+	border: 0px;
+}
 
 
