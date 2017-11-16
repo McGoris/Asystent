@@ -66,137 +66,7 @@
 
 		<!-- Kalkulator -->
 		
-		<div data-role="page" id="kalkulator" style="background-color: #002;">
-		
-			<div data-role="header" data-position="fixed" style="background-color: #003;">
-				<h1><font color="#bbb"> Kalkulator </font></h1>
-				
-			</div>
-			<div data-role="main" class="ui-content">
-			
-				<div id="pole1" align="center">
-					<input type="number" id="pole"> </input>
-				
-				
-					<br>
-					<font color="#bbb">
-					<table border="0">
-						<tr><td>AU -> KM</td><td><input type="radio" id="au1" value="1" checked name="a" ></input></td>
-							</tr>
-						<tr><td>Pc -> KM</td><td><input type="radio" id="pc1" value="2" name="a"></input></td>
-							</tr>
-						<tr><td>Ly -> KM</td><td> <input type="radio" id="km1" value="3" name="a"></input></td>
-							</tr>
-						
-						<tr><td></td><td></td>
-							</tr>						
-							
-							
-						<tr><td>Pc -> AU</td><td><input type="radio" id="ly1" value="4" name="a"></input></td>
-							</tr>
-						<tr><td>Ly -> AU</td><td><input type="radio" id="au2" value="5" name="a"></input></td>
-							</tr>
-						<tr><td>KM -> AU</td><td><input type="radio" id="pc2" value="6" name="a"></input></td>
-							</tr>
-							
-							
-						<tr><td>Ly -> Pc</td><td> <input type="radio" id="km2" value="7" name="a"></input></td>
-							</tr>
-						<tr><td>AU -> Pc</td><td> <input type="radio" id="ly2" value="8" name="a"></input></td>
-							</tr>
-						<tr><td>KM -> Pc</td><td> <input type="radio" id="ly2" value="9" name="a"></input></td>
-							</tr>
-							
-							
-						<tr><td>Pc -> Ly</td><td> <input type="radio" id="ly2" value="10" name="a"></input></td>
-							</tr>
-						<tr><td>AU -> Ly</td><td> <input type="radio" id="ly2" value="11" name="a"></input></td>
-							</tr>
-						<tr><td>KM -> Ly</td><td> <input type="radio" id="ly2" value="12" name="a"></input></td>
-							</tr>
-					</table>
-					</font>
-					
-				<br>
-					
-				</div>
-				
-			
-			</div>
-			<div align="center">
-			<a href="#legenda" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #344836;"><font color="#bbb"> Legenda </font> </a>
-			<a class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #344836;" onclick="getValue();"><font color="#bbb"> Przelicz </font> </a>
-			<a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #565624;"><font color="#bbb"> Powrót do strony głównej </font> </a>
-			</div>
-				<br>
-			
-
-			
-			<div data-role="footer" style="background-color: #772;" data-position="fixed">
-			
-			<h1><font color="#000"> (c) McGoris Polska </font></h1>
-			
-		    </div> 
-		</div> 	
-
-		<!-- legenda -->
-		
-		
-		<div data-role="page" id="legenda" style="background-color: #002;">
-		
-			<div data-role="header" data-position="fixed" style="background-color: #003;">
-				<h1><font color="#bbb"> Legenda </font></h1>
-				
-			</div>
-			<div data-role="main" class="ui-content" >
-			
-			<font color="#bbb">
-				
-				AU - Jednostka astronomiczna 
-				<br>
-				1 AU = 149597871 km.
-				<br>
-				Jest to średnia odległość Ziemi od Słońca.
-				<br>
-				<br>
-				
-				Pc - Parsek
-				<br>
-				1 PC = 3,26 roku świetlnego
-				<br>
-				Jest to odległość, dla której 1 jednostka astronomiczna jest widoczna jako 1 sekunda kątowa.
-				<br>
-				<br>
-				Ly - Rok świetlny
-				<br>
-				1 Ly = 9460528400000 km = 63241 jednostek astronomicznych.
-				<br>
-				Jest to odległość, którą światło przemierza w ciągu roku.
 	
-				
-				
-				</font>	
-				<br>
-				<br>
-				<br>
-			<div align="center">	
-			<a href="#kalkulator" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #002;"><font color="#bbb"> Powrót </font> </a>	
-			</div>
-			</div>
-				
-			
-
-			
-			<div data-role="footer" style="background-color: #003;" data-position="fixed">
-			
-			<h1><font color="#bbb"> (c) McGoris Polska </font></h1>
-			
-		    </div> 
-		</div> 	
-		
-		
-		
-		
 		
 		<!-- informacje -->
 		
@@ -342,9 +212,89 @@
 			<h1><font color="#bbb">(c) McGoris Polska </font></h1>
 		  </div> 
 		</div> 
+	
+<!-- plan obserwacji -->	
+		
+	<div data-role="page" id="kalkulator" style="background-color: #000;" >
+		
+			<div data-role="header" data-position="fixed" style="background-color: #300;" class="header">
+				<h1><font color="#a00" id="czcionkaa"> Plan obserwacji </font></h1>
+				
+			</div>
+			<div data-role="main" class="ui-content">
+			
+				<div id="pole1" align="center">
+					
+			</div>
+			<div align="center">
+			
+			<a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #565624;"><font color="#bbb"> Powrót do strony głównej </font> </a>
+			</div>
+				<br>
+			
+
+			
+			<div data-role="footer" style="background-color: #300;" data-position="fixed" class="header">
+			
+			<h1><font color="#a00" id="czcionka"> (c) McGoris Polska </font></h1>
+			
+		    </div> 
+		</div> 	
+
+		<!-- legenda -->
 		
 		
+		<div data-role="page" id="legenda" style="background-color: #002;">
 		
+			<div data-role="header" data-position="fixed" style="background-color: #003;">
+				<h1><font color="#bbb"> Legenda </font></h1>
+				
+			</div>
+			<div data-role="main" class="ui-content" >
+			
+			<font color="#bbb">
+				
+				AU - Jednostka astronomiczna 
+				<br>
+				1 AU = 149597871 km.
+				<br>
+				Jest to średnia odległość Ziemi od Słońca.
+				<br>
+				<br>
+				
+				Pc - Parsek
+				<br>
+				1 PC = 3,26 roku świetlnego
+				<br>
+				Jest to odległość, dla której 1 jednostka astronomiczna jest widoczna jako 1 sekunda kątowa.
+				<br>
+				<br>
+				Ly - Rok świetlny
+				<br>
+				1 Ly = 9460528400000 km = 63241 jednostek astronomicznych.
+				<br>
+				Jest to odległość, którą światło przemierza w ciągu roku.
+	
+				
+				
+				</font>	
+				<br>
+				<br>
+				<br>
+			<div align="center">	
+			<a href="#kalkulator" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #002;"><font color="#bbb"> Powrót </font> </a>	
+			</div>
+			</div>
+				
+			
+
+			
+			<div data-role="footer" style="background-color: #003;" data-position="fixed">
+			
+			<h1><font color="#bbb"> (c) McGoris Polska </font></h1>
+			
+		    </div> 
+		</div> 		
 		
 		
 		
