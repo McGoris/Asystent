@@ -19,35 +19,35 @@
 		
 		
 		  <div class="header" data-role="header" data-position="fixed" style="background-color: #300;">
-			<h1><font id="czcionkaa" color="#A00" > ASYSTENT OBSERWACJI ASTRONOMICZNYCH. </font></h1>
+			<h1><font id="czcionkaa" color="#A00" > ASYSTENT OBSERWACJI </font></h1>
 		  </div>
 		  
 		  
 		  <div data-role="main" class="ui-content" id="main" style="background-color: #050000;" >
 			<br>
-			<div style="background-color: #200; width: 70%; height: 15%;">
+			<div style="background-color: #200; width: 70%;">
 			
-				<a href="#kalkulator" style="text-decoration: none;" ><button style="background-color: #250000;" onclick="WlaczQuiz();" border="0"><font id="czcionka" color="#900"><i> PLAN OBSERWACJI </i> </font></button></a>
+				<a href="#kalkulator" style="text-decoration: none; " ><button style="background-color: #250000; outline-style: solid; outline-color: #900;" onclick="WlaczQuiz();" ><font id="czcionka" color="#900"><i> PLAN OBSERWACJI </i> </font></button></a>
 			
 			</div>
 			<br>
 
-			<div style="background-color: #200; width: 70%; height: 15%;">
-			<a href="#wisielec" style="text-decoration: none; "><button style="background-color: #250000;"><font color="#900" id="czcionka"><i>GRA ORION</i></font></button</a>
+			<div style="background-color: #200; width: 70%;  border-radius: 20px;">
+			<a href="#wisielec" style="text-decoration: none;   "><button style="background-color: #250000; outline-style: solid; outline-color: #900;"><font color="#900" id="czcionka"><i>GRA ORION</i></font></button</a>
 			</div>
 			<br>
-			<div style="background-color: #200; width: 70%; height: 15%;">
-			<a onclick="OtworzStrone();" style="text-decoration: none;" ><button style="background-color: #250000;"><font color="#900" id="czcionka"><i> BLOG ASTRONOMICZNY </i></font></button</a>
+			<div style="background-color: #200; width: 70%; border-radius: 20px; ">
+			<a onclick="OtworzStrone();" style="text-decoration: none;" ><button style="background-color: #250000; outline-style: solid; outline-color: #900;"><font color="#900" id="czcionka"><i> BLOG ASTRONOMICZNY </i></font></button</a>
 			
 			</div>
 			<br>
-			<div style="background-color: #200; width: 70%; height: 15%;">
-			<a href="#info" style="text-decoration: none;"><button style="background-color: #250000;"> <font color="#900" id="czcionka"><i>O AUTORZE</i></font></button></a>
+			<div style="background-color: #200; width: 70%;  border-radius: 20px;">
+			<a href="#info" style="text-decoration: none; "><button style="background-color: #250000; outline-style: solid; outline-color: #900;"> <font color="#900" id="czcionka"><i>O AUTORZE</i></font></button></a>
 			
 			</div>
 			<br>
-			<div style="background-color: #200; width: 70%; height: 15%;">
-			<a style="text-decoration: none;" onclick='exitApp();'><button style="background-color: #250000;"><font color="#900" id="czcionka"><i>WYJDŹ</i></font></button></a>
+			<div style="background-color: #200; width: 70%;  border-radius: 20px;">
+			<a style="text-decoration: none; " onclick='exitApp();'><button style="background-color: #250000; outline-style: solid; outline-color: #900; "><font color="#900" id="czcionka"><i>WYJDŹ</i></font></button></a>
 			</div>
 			<br>
 			<br>
@@ -58,7 +58,7 @@
 			
 		
 		  </div>
-		  <div data-role="footer" data-position="fixed" style="background-color: #000; ">
+		  <div data-role="footer" data-position="fixed" class="header" style="background-color: #000; ">
 		    
 		    <h1><font color="#600" id="czcionka">(c) McGoris Polska </font></h1>
 		  </div> 
@@ -251,7 +251,7 @@
 		<div data-role="page" id="wisielec" style="background-color: #000;">
 		
 			<div data-role="header" class="header" style="background-color: #300;">
-				<h1><font color="#900" id="czcionka"> Gra Orion </font></h1>
+				<h1><font color="#A00" id="czcionka"> Gra Orion </font></h1>
 				
 			</div>
 				<div data-role="main" class="ui-content">
@@ -282,9 +282,15 @@
 				</div>
 				
 				<div align="center">
-					<a href="javascript:location.reload()" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #344836;"><font color="#aaa"> Odśwież </font> </a>
-					<a href="#zasady" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #344836;"><font color="#aaa"> Zasady Gry </font> </a>
-					<a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #565624;"><font color="#aaa"> Powrót do strony głównej </font> </a>
+					<div style="background-color: #200; width: 20%; ">
+					<a href="javascript:location.reload()" style="text-decoration: none;"> <button style="background-color: #250000; outline-style: solid; outline-color: #700;"><font color="#900" id="czcionka"> Odśwież </button></font> </a>
+					</div>
+					<div style="background-color: #200; width: 20%; ">
+					<a href="#zasady" style="text-decoration: none;" ><button style="background-color: #250000; outline-style: solid; outline-color: #700;"><font color="#900" id="czcionka"> Zasady Gry </button></font> </a>
+					</div>
+					<div style="background-color: #200; width: 20%; ">
+					<a href="#pageone" style="text-decoration: none;"><button style="background-color: #250000; outline-style: solid; outline-color: #700;"><font color="#900" id="czcionka"> Powrót do strony głównej </button></font> </a>
+					</div>
 				</div>
 				
 				
