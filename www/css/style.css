@@ -101,6 +101,15 @@
 	font-family: Trebuchet MS;
 	text-shadow: none;
 	
+	
+}
+
+#czcionkaa
+{
+	font-family: Arial Narrow;
+	text-shadow: none;
+	font-size: 24px;
+	display: block;
 }
 
 
@@ -162,8 +171,9 @@
 }
 
 
-.ui-page
+
+.header
 {
 	border: 0px;
+	
 }
-
