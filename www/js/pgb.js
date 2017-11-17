@@ -379,7 +379,7 @@ function sprawdz(nr)
 			if (ilosc_liter == haslo1.length-ilosc_spacji)
 			{
 				
-				alert("Wygrałeś");
+				
 				setTimeout(function(){ location.reload(); }, 1000);
 			}
 	}
