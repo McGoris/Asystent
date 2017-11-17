@@ -401,7 +401,7 @@ function sprawdz(nr)
 		if (ilosc_szans == 9) 
 		{
 			
-			alert("Przegrałeś");
+			
 			setTimeout(function(){ location.reload(); }, 1000);
 		}
 		
