@@ -96,11 +96,18 @@
 	
 }
 
+#pageone
+{
+	height: 70%;
+	
+	
+}
+
 #czcionka
 {
 	font-family: Trebuchet MS;
 	text-shadow: none;
-	
+	font-size: 18px;
 	
 }
 
@@ -177,5 +184,10 @@
 {
 	border: 0px;
 	text-overflow: string;
+}
+
+#tabela
+{
+		border-color: #800;
 }
 

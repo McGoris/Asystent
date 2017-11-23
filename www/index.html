@@ -3,19 +3,18 @@
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<script src="js/pgb.js"></script>
+		<script src="cordova.js"></script>
 		<script src="js/quiz.js"></script>
 		<script src="js/kalk.js"></script>
-		<script src="cordova.js"></script>
-		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		
 		<link rel="stylesheet" href="css/style.css" />
-		<script src="js/jquery-2.1.4.min.js"></script>
-		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	
 		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 	</head>
-	<body onload=" start(); ">
+	<body>
 		
 		<!-- Strona glowna  -->
-		<div data-role="page" id="pageone" align="center">
+		<div id="pageone" align="center">
 		
 		
 		  <div class="header"  style="background-color: #300; ">
@@ -25,28 +24,29 @@
 		  </div>
 		  
 		  
-		  <div data-role="main" class="ui-content" id="main" style="background-color: #050000;" >
+		  <div id="main" style="background-color: #050000; " >
 			<br>
-			<div style="background-color: #200; width: 70%;">
+			<br>
+			<div style="background-color: #200; width: 60%; ">
 			
-				<a href="#kalkulator" style="text-decoration: none; " ><button style="background-color: #250000; outline-style: solid; outline-color: #900;" onclick="WlaczQuiz();" ><font id="czcionka" color="#900"><i> PLAN OBSERWACJI </i> </font></button></a>
+				<a href="#planobs" style="text-decoration: none; " ><button style="background-color: #250000; outline-style: solid; outline-color: #900; border: 0px; width: 100%; padding: 7px;" onclick="WlaczQuiz();" ><font id="czcionka" color="#900"><b><i> PLAN OBSERWACJI </b></i> </font></button></a>
 			
 			</div>
 			<br>
 
-			<div style="background-color: #200; width: 70%;  border-radius: 20px;">
-			<a href="#wisielec" style="text-decoration: none;   "><button style="background-color: #250000; outline-style: solid; outline-color: #900;"><font color="#900" id="czcionka"><i>GRA ORION</i></font></button</a>
+			<div style="background-color: #200; width: 60%; ">
+			<a href="orion.html" style="text-decoration: none;   "><button style="background-color: #250000; outline-style: solid; outline-color: #900; border: 0px; width: 100%; padding: 7px;" ><font color="#900" id="czcionka"><i>GRA ORION</i></font></button</a>
 			</div>
 			<br>
 			
 			
-			<div style="background-color: #200; width: 70%;  border-radius: 20px;">
-			<a href="#info" style="text-decoration: none; "><button style="background-color: #250000; outline-style: solid; outline-color: #900;"> <font color="#900" id="czcionka"><i>O AUTORZE</i></font></button></a>
+			<div style="background-color: #200; width: 60%;  ">
+			<a href="#info" style="text-decoration: none; "><button style="background-color: #250000; outline-style: solid; outline-color: #900; border: 0px; width: 100%; padding: 7px;"> <font color="#900" id="czcionka"><i>O AUTORZE</i></font></button></a>
 			
 			</div>
 			<br>
-			<div style="background-color: #200; width: 70%;  border-radius: 20px;">
-			<a style="text-decoration: none; " onclick='exitApp();'><button style="background-color: #250000; outline-style: solid; outline-color: #900; "><font color="#900" id="czcionka"><i>WYJDŹ</i></font></button></a>
+			<div style="background-color: #200; width: 60%; ">
+			<a style="text-decoration: none; " onclick='exitApp();'><button style="background-color: #250000; outline-style: solid; outline-color: #900; border: 0px; width: 100%; padding: 7px; "><font color="#900" id="czcionka"><i>WYJDŹ</i></font></button></a>
 			</div>
 			<br>
 			<br>
@@ -56,10 +56,12 @@
 
 			
 		
-		  </div>
-		  <div data-role="footer" class="header" style="background-color: #000;" data-position="fixed">
-		    
+		</div>
+		
+		  <div class="header" style="background-color: #000;">
+		    <br>
 		    <h1><font color="#600" id="czcionka">(c) McGoris Polska </font></h1>
+			
 		  </div> 
 		</div> 
 
@@ -67,7 +69,7 @@
 		
 	
 		
-		<!-- informacje -->
+		<!-- informacje
 		
 		<div data-role="page" id="info" style="background-color: #000;">
 		
@@ -123,63 +125,10 @@
 		
 		<!-- Orion -->
 		
-		<div data-role="page" id="wisielec" style="background-color: #000;" align="center">
-		
-			<div class="header"  style="background-color: #300; ">
-			<br>
-			<h1><font id="czcionkaa" color="#A00"> Gra Orion </font></h1>
-			<br>
-		  </div>
-				<div data-role="main" class="ui-content">
-					<font style="color: #900;" id="czcionka">
-					<div id="plansza">
-					
-					</div>
-					</font>
-					<div id="szubienica">
-					
-						<img src="img/A0.jpg">
-					
-					
-					</div>
-					
-					<div id="alfabet">
-					
-					
-					
-					</div>
-					
-					
-					
-					<div style="clear:both;">
-					
-					</div>
-				
-				</div>
-				
-				<div align="center">
-					<div style="background-color: #200; width: 60%; ">
-					<a href="javascript:location.reload()" style="text-decoration: none;"> <button style="background-color: #250000; outline-style: solid; outline-color: #700;"><font color="#900" id="czcionka"> Odśwież </button></font> </a>
-					</div>
-					<div style="background-color: #200; width: 60%; ">
-					<a href="#zasady" style="text-decoration: none;" ><button style="background-color: #250000; outline-style: solid; outline-color: #700;"><font color="#900" id="czcionka"> Zasady Gry </button></font> </a>
-					</div>
-					<div style="background-color: #200; width: 60%; ">
-					<a href="#pageone" style="text-decoration: none;"><button style="background-color: #250000; outline-style: solid; outline-color: #700;"><font color="#900" id="czcionka"> Powrót do strony głównej </button></font> </a>
-					</div>
-				</div>
-				
-				
-				
-				
-			<div data-role="footer" class="header" style="background-color: #000;">
-			
-			<h1><font color="#a00" id="czcionka">(c) McGoris Polska </font></h1>
-		  </div> 
-		</div> 
 		
 		
-	<!-- zasady gry --> 
+		
+	<!-- zasady gry 
 	
 	<div data-role="page" id="zasady" style="background-color: #001;">
 		
@@ -219,9 +168,44 @@
 		  </div> 
 		</div> 
 	
-<!-- plan obserwacji -->	
+<!-- lista planów 	
 		
-	<div data-role="page" id="kalkulator" style="background-color: #000;" >
+	<div data-role="page" id="planobs" style="background-color: #000;" >
+		
+			<div data-role="header" data-position="fixed" style="background-color: #300;" class="header">
+				<h1><font color="#a00" id="czcionkaa"> Plan obserwacji </font></h1>
+				
+			</div>
+			<div data-role="main" class="ui-content">
+			
+				<div id="lista" align="center">
+				
+				<table id="tabela" border="0" width="80%">
+				
+					<tr><td id="numer"><font id="czcionka" color="#a00"> DASASDSA </font></td><td id="nazwa_listy"><font color="#a00" id="czcionka"> DFDFDFDFDFD </font></td>
+					</tr>
+					
+				</table>
+				
+				</div>
+				
+				<div style="background-color: #200; width: 60%; " align="center">
+					<a href="#pageone" style="text-decoration: none;"><button style="background-color: #250000; outline-style: solid; outline-color: #700;"><font color="#900" id="czcionka"> Powrót do strony głównej </button></font> </a>
+				</div>
+				
+			
+
+			
+			<div data-role="footer" style="background-color: #300;" data-position="fixed" class="header">
+			
+			<h1><font color="#a00" id="czcionka"> (c) McGoris Polska </font></h1>
+			
+		    </div> 
+		</div> 	
+		
+<!-- plan pojedynczy 	
+		
+	<div data-role="page" id="currentplan" style="background-color: #000;" >
 		
 			<div data-role="header" data-position="fixed" style="background-color: #300;" class="header">
 				<h1><font color="#a00" id="czcionkaa"> Plan obserwacji </font></h1>
@@ -247,7 +231,39 @@
 		    </div> 
 		</div> 	
 
-		<!-- legenda -->
+<!-- edycja planu 	
+		
+	<div data-role="page" id="planedit" style="background-color: #000;" >
+		
+			<div data-role="header" data-position="fixed" style="background-color: #300;" class="header">
+				<h1><font color="#a00" id="czcionkaa"> Plan obserwacji </font></h1>
+				
+			</div>
+			<div data-role="main" class="ui-content">
+			
+				<div id="pole1" align="center">
+					
+				</div>
+				
+				<div style="background-color: #200; width: 60%; ">
+					<a href="#pageone" style="text-decoration: none;"><button style="background-color: #250000; outline-style: solid; outline-color: #700;"><font color="#900" id="czcionka"> Powrót do strony głównej </button></font> </a>
+				</div>
+				
+			
+
+			
+			<div data-role="footer" style="background-color: #300;" data-position="fixed" class="header">
+			
+			<h1><font color="#a00" id="czcionka"> (c) McGoris Polska </font></h1>
+			
+		    </div> 
+		</div> 			
+		
+
+		
+		
+		
+		<!-- legenda 
 		
 		
 		<div data-role="page" id="legenda" style="background-color: #002;">
@@ -302,7 +318,7 @@
 		    </div> 
 		</div> 		
 		
-		
+	-->	
 		
 		
 	</body>
