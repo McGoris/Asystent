@@ -3,13 +3,13 @@
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 			
 		<script src="cordova.js"></script>
-		<script src="plan.js"></script>
+		<script src="js/plan.js"></script>
 			
 		<link rel="stylesheet" href="css/style.css" />
 	
 		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 	</head>
-	<body style="background-color: #000;" >
+	<body style="background-color: #000;">
 		
 		<!-- Strona glowna  -->
 		<div align="center">
@@ -31,11 +31,12 @@
 			<div>
 			
 			<table>
-			<tr><td width="80%"><font color="#a00" id="czcionka"> Nazwa: </font></td><td><font color="#a00"><input type="text" name="nazwa_listy" style="background-color: #300; border: none; padding: 3px;"></font></td></tr>
+			<tr><td width="80%"><font color="#a00" id="czcionka"> Nazwa: </font></td><td><input type="text" name="nazwa_listy" id="inputnazwa"></td></tr>
+			<tr><td><br></td></tr>
 			<tr><td colspan="2" width="80%">
 			<div style="background-color: #200;">
 						
-						<a href="plan_dodaj.html" style="text-decoration: none; "><button style="background-color: #250000; outline-style: solid; outline-color: #900; border: 0px; width: 100%; padding: 7px;" ><font color="#a00" id="czcionka"><i> Dodaj obiekty </i></font></button></a>
+						<a style="text-decoration: none; "><button id="przycisk" onclick="sprawdz_czy_jest_nazwa();" ><font color="#a00" id="czcionka"><i> Dodaj listę </i></font></button></a>
 			</div>
 					</td></tr>
 			
@@ -51,7 +52,7 @@
 				<br>
 				<br>
 					<div style="background-color: #200; width: 60%; ">
-						<a href="plan.html" style="text-decoration: none; "><button style="background-color: #250000; outline-style: solid; outline-color: #900; border: 0px; width: 100%; padding: 7px;" ><font color="#a00" id="czcionka"><i>Powrót</i></font></button></a>
+						<a href="plan.html" style="text-decoration: none; "><button id="przycisk" ><font color="#a00" id="czcionka"><i>Powrót</i></font></button></a>
 					</div>
 				
 			

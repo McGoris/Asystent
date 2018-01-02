@@ -96,13 +96,7 @@
 	
 }
 
-#pageone
-{
-	height: 70%;
-	width: 100%;
-	margin: 0px;
-	
-}
+
 
 #czcionka
 {
@@ -235,4 +229,13 @@
 	
 }
 
-
+#inputnazwa
+{
+	background-color: #400; 
+	border: none; 
+	padding: 3px;
+	color: #b00;
+	font-size: 20px;
+	border: 2px solid #a00;
+	
+}
