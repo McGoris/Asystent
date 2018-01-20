@@ -1,241 +1,108 @@
-.option
-{
-
-	
-	border: 2px solid gray;
-	border-radius: 8px;
-	min-height: 40px;
-	margin-bottom: 8px;
-	padding-left: 20px;
-	
-	
-}
-
-
-
-#question
-{
-	min-height: 50px;
-	margin-bottom: 25px;
-	text-align: center;
-	border: 2px solid gray;
-	border-radius: 8px;
-	padding: 5px;
-	
-	
-}
-
-
-#pytanie
-{
-	border-style: solid;
-	border-radius: 10px;
-	min-height: 40px;
-	font-size: 14px;
-	font-family: 'Inconsolata', monospace;
-	text-align: center;
-	background-color: #007;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	padding-top: 20px;
-}
-
-
-#odpowiedzi
-{
-	
-	min-height: 120px;
-	font-size: 12px;
-	font-family: 'Inconsolata', monospace;
-	
-		
-}
-
-#plansza 
-{
-	width: 100%; 
-	margin-top: 10px; 
-	margin-bottom: 10px; 
-	text-align: center; 
-	font-size: 20px; 
-	min-height: 40px;
-	font-family: 'Inconsolata', monospace;
-
-	
-	
-}
-
-#szubienica
-{
-	
-	float: left; 
-	width: 50%; 
-	text-align: center; 
-	min-height: 125px;
-	
-	
-}
-
-#alfabet
+#top
 
 {
-	
-	width: 50%; 
-	text-align: center; 
-	min-height: 125px;
-	float: left;
-	
-}
-
-#pole1
-{
-	width: 80%;
-	float: left;
-	margin-top: 40px;
-	min-width: 40%;
-	
-}
-
-
-
-#czcionka
-{
+	width: 100%;
+	background-color: #100;
+	border-bottom: 2px solid #800;
+	height: 15%;
 	font-family: Trebuchet MS;
-	
-	font-size: 21px;
-	
-}
-
-#czcionkaa
-{
-	font-family: Arial Narrow;
-	
-	font-size: 24px;
-	
-	
-}
-
-
-
-.odpowiedz
-
-{
-	cursor: pointer;
-	width: 45%;
-	height: 25px;
-	border-radius: 4px;
-	float: left;
-	margin: 3px;
-	padding: 3px;
-	border: 2px solid gray;
-	border-radius: 8px;
-}
-
-
-.litera
-
-{
-	width: 20px;
-	height: 20px;
 	text-align: center;
-    margin: 1px;
-	padding: 2px;
-	border: 2px solid gray;
-	border-radius: 8px;
-	float: left;
-	cursor: pointer;
-	
+	color: #A00;
+	padding-bottom: 4px;
+	font-size: 20px;	
 }
 
-.litera:hover
+#container 
+
 {
-	background-color: #333;
-	
-	
+	width: 100%;
+	background-color: #100;
+	height: 70%;
+	font-family: Trebuchet MS;
+	color: #A00;
+	text-align: center;
 }
 
-
-
-.odpowiedz:hover
-{
-	background-color: #333;
-	
-	
-}
-
-
-.header
-{
-	border: 0px;
-	text-overflow: string;
-	margin: 0px;
-}
-
-
-#button
-{
-	background-color: #250000;  
-	border: 3px solid #a00; 
-	border-radius: 8px; 
-	width: 100%; 
-	padding: 7px;
-	
-}
-
-
-#button:hover
-{
-	background-color: #600;
-}
-
-
-#dodaj
+#stopka
 
 {
-	background-color: #250000; 
-	outline-style: solid; 
-	outline-color: #900; 
-	border: 0px; 
-	width: 100%; 
-	padding-top: 5px;
-	padding-bottom: 5px;
-	
-	
-}
-
-#dodaj:hover
-{
-		background-color: #600;
-		
-	
-}
-
-
-#przycisk
-{
-	background-color: #250000; 
-	border: 3px solid #900; 
-	border-radius: 10px; 
-	width: 100%; 
-	padding: 9px;
-	
-}
-
-
-#przycisk:hover
-{
-	background-color: #600; 
-	
-	
-}
-
-#inputnazwa
-{
-	background-color: #400; 
-	border: none; 
-	padding: 3px;
-	color: #b00;
+	width: 100%;
+	height: 15%;
+	font-family: Trebuchet MS;
+	color: #A00;
+	text-align: center;
+	border-top: 2px solid #800;
+	padding-top: 4px;
+	position: relative;
+	right: 0;
+	top: 50%;
 	font-size: 20px;
-	border: 2px solid #a00;
+}
+
+#button-lista
+
+{
+	background-color: #100;
+	border: 3px solid #a00;
+	border-radius: 8px;
+	text-align: center;
+	padding: 4px;
+	width: 70%;
+	font-size: 20px;
+	font-family: Trebuchet MS;
+	color: red;
 	
+}
+
+#button-lista:hover
+
+{
+	background-color: #300;
+}
+
+#lista_list
+{
+	width: 90%;
+	text-align: center;
+}
+
+#button-add
+{
+	background-color: #300;
+	border: 3px solid #a00;
+	width: 100%;
+	padding: 4px;
+	
+	
+}
+
+#text_input
+{
+	background-color: #300;
+	border: 3px solid #a00;
+	color: red;
+}
+
+#usun
+
+{
+	background-color: #100;
+	border: 3px solid #a00;
+	color: red;
+	border-radius: 8px;
+	padding: 4px;
+	font-size: 20px;
+	font-family: Trebuchet MS;
+}
+
+#usun:hover
+{
+	background-color: #300;
+	
+}
+
+#text_input
+{
+	padding: 3px;
+	font-size: 18px;
 }

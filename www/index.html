@@ -1,325 +1,40 @@
 ﻿<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<script src="js/pgb.js"></script>
-		
-		<script src="cordova.js"></script>
-		
-		
-		<link rel="stylesheet" href="css/style.css" />
+
+
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<script src="js/angular.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/angular-data-storage.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+<title> Marcin Goryl 9811 </title>
+</head>
+<body ng-app style="background-color: #000;">
+<div id="top">
+Asystent Obserwacji Astronomicznych
 	
-		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-	</head>
-	<body style="background-color: #000;">
-		
-		<!-- Strona glowna  -->
-		<div id="pageone" align="center" >
-		
-		
-		  <div class="header"  style="background-color: #200; border-bottom: 3px solid #a00; ">
-			<br>
-			<h1><font id="czcionkaa" color="#A00"> Asystent Obserwacji Astronomicznych</font></h1>
-			<br>
-		  </div>
-		  
-		  
-		  <div id="main" style="background-color: #050000; width: 100%; background: url(img/background.jpg); " >
-			<br>
-			<br>
-			<div style="background-color: #200; width: 60%; border-radius: 10px;">
-			
-				<a href="plan.html" style="text-decoration: none; " ><button id="przycisk"><font id="czcionka" color="#b00"><b><i> Plan Obserwacji </b></i> </font></button></a>
-			
-			</div>
-			<br>
+</div>
 
-			<div style="background-color: #200; width: 60%; border-radius: 10px;">
-			<a href="orion.html" style="text-decoration: none;   "><button id="przycisk"><font color="#b00" id="czcionka"><b><i>Gra Orion</b></i></font></button</a>
-			</div>
-			<br>
-			
-			
-			<div style="background-color: #200; width: 60%;  border-radius: 10px;">
-			<a href="info.html" style="text-decoration: none; "><button  id="przycisk"> <font color="#b00" id="czcionka"><b><i>Autorzy</b></i></font></button></a>
-			
-			</div>
-			<br>
-			<div style="background-color: #200; width: 60%; border-radius: 10px;">
-			<a style="text-decoration: none; " onclick='exitApp();'><button id="przycisk"><font color="#b00" id="czcionka"><b><i>Wyjdź z aplikacji</b></i></font></button></a>
-			</div>
-			<br>
-			<br>
-			
-			<br>
-			
+<div id="container" align="center">
 
-			
-		
+
+
+	
+
+	<br>
+		<div align="center">
+			<a href="plan.html"> <button id="button-lista"><font color="#a00"><b> Plan Obserwacji </b></font></button></a>
 		</div>
-		
-		  <div class="header" style="background-color: #000; border-top: 3px solid #a00; " >
-		    
-		    <h1><font color="#800" id="czcionka">(c) McGoris Polska </font></h1>
-			
-		  </div> 
-		</div> 
+	<br>
+</div>
 
-		<!-- Kalkulator -->
-		
-	
-		
-		<!-- informacje
-		
-		<div data-role="page" id="info" style="background-color: #000;">
-		
-			<div class="header" data-role="header" style="background-color: #300; ">
-				<h1><font id="czcionkaa" color="#a00" style="text-decoration: none;"> Autorzy </font></h1>
-				
-			</div>
-			
-			<div data-role="main" class="ui-content" align="center">
-				<font color="#a00" id="czcionka">
-				<table border="0" style="width: 70%; ">
-					<tr><td> Imię: </td><td style="text-align: right;"> Marcin </td></tr>
-					<tr><td> Nazwisko: </td><td style="text-align: right;"> Goryl </td></tr>
-				</table>
-					<br>
-					<br>
-				<table border="0" style="width: 70%; ">	
-					<tr><td> </td><td style="text-align: right;"> Astronomia </td></tr>
-					<tr><td> Hobby: </td><td style="text-align: right;"> Fotografia </td></tr>
-					<tr><td></td><td style="text-align: right;"> Informatyka </td></tr>
-				</table>
-					<br>
-					<br>
-				<table border="0" style="width: 70%; ">		
-					<tr><td> Wiek: </td><td style="text-align: right;"> 23 </td></tr>
-				</table>	
-				
-				<br>
-				
-				
-				
-				
-				</font>
-				<br>
-				<br>
-				<div style="background-color: #200; width: 60%; border-radius: 20px; ">
-					<a onclick="OtworzStrone();" style="text-decoration: none;" ><button style="background-color: #250000; outline-style: solid; outline-color: #900;"><font color="#900" id="czcionka"> McAstronomia Blog </font></button</a>
-			
-				</div>
-				<div style="background-color: #200; width: 60%; ">
-					<a href="index.html" style="text-decoration: none;"><button style="background-color: #250000; outline-style: solid; outline-color: #700;"><font color="#900" id="czcionka"> Powrót </button></font> </a>
-				</div>
-				
-			</div>
-			
-			<div class="header" data-role="footer" data-position="fixed" style="background-color: #000;">
-				
-				<h1><font color="#500" id="czcionka">(c) McGoris Polska </font></h1>
-			
-			</div> 
-			
-		</div>		
-		
-		<!-- Orion -->
-		
-		
-		
-		
-	<!-- zasady gry 
-	
-	<div data-role="page" id="zasady" style="background-color: #001;">
-		
-			<div data-role="header" style="background-color: #003;">
-				<h1><font color="#bbb"> Gra Orion - Zasady </font></h1>
-				
-			</div>
-				<div data-role="main" class="ui-content">
-					
-				<font color="#bbb">
+<div id="stopka">
 
-				Twoim zadaniem jest odgadnąć słowo/zdanie, które jest zakryte pionowymi kreskami. 
-				<br>
-				Masz do wyboru wszystkie litery alfabetu. Jeżeli dana litera istnieje, wstawiana jest w odpowiednie miejsce.
-				<br>
-				Jeżeli dana litera nie występuje, wtedy rysują się gwiazdy gwiazdozbioru Oriona.
-				<br> 
-				Jeżeli uda ci się odgadnąć słowo/zdanie, wygrywasz.
-				<br>
-				Jeżeli nie uda ci się odgadnąć i narysuje się cała konstelacja Oriona, przegrywasz.
+(C) McGoris Polska
 
-				</font>	
-				<br>
-				
-				<div align="center">
-				<br><br><br>
-				<a href="#wisielec" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #003;"><font color="#bbb"> Powrót do gry </font> </a>
-				</div>
-				</div>
-				
-				
-				
-				
-			<div data-role="footer"  data-position="fixed" style="background-color: #003; ">
-			
-			<h1><font color="#bbb">(c) McGoris Polska </font></h1>
-		  </div> 
-		</div> 
-	
-<!-- lista planów 	
-		
-	<div data-role="page" id="planobs" style="background-color: #000;" >
-		
-			<div data-role="header" data-position="fixed" style="background-color: #300;" class="header">
-				<h1><font color="#a00" id="czcionkaa"> Plan obserwacji </font></h1>
-				
-			</div>
-			<div data-role="main" class="ui-content">
-			
-				<div id="lista" align="center">
-				
-				<table id="tabela" border="0" width="80%">
-				
-					<tr><td id="numer"><font id="czcionka" color="#a00"> DASASDSA </font></td><td id="nazwa_listy"><font color="#a00" id="czcionka"> DFDFDFDFDFD </font></td>
-					</tr>
-					
-				</table>
-				
-				</div>
-				
-				<div style="background-color: #200; width: 60%; " align="center">
-					<a href="#pageone" style="text-decoration: none;"><button style="background-color: #250000; outline-style: solid; outline-color: #700;"><font color="#900" id="czcionka"> Powrót do strony głównej </button></font> </a>
-				</div>
-				
-			
+<div>
 
-			
-			<div data-role="footer" style="background-color: #300;" data-position="fixed" class="header">
-			
-			<h1><font color="#a00" id="czcionka"> (c) McGoris Polska </font></h1>
-			
-		    </div> 
-		</div> 	
-		
-<!-- plan pojedynczy 	
-		
-	<div data-role="page" id="currentplan" style="background-color: #000;" >
-		
-			<div data-role="header" data-position="fixed" style="background-color: #300;" class="header">
-				<h1><font color="#a00" id="czcionkaa"> Plan obserwacji </font></h1>
-				
-			</div>
-			<div data-role="main" class="ui-content">
-			
-				<div id="pole1" align="center">
-					
-				</div>
-				
-				<div style="background-color: #200; width: 60%; ">
-					<a href="#pageone" style="text-decoration: none;"><button style="background-color: #250000; outline-style: solid; outline-color: #700;"><font color="#900" id="czcionka"> Powrót do strony głównej </button></font> </a>
-				</div>
-				
-			
-
-			
-			<div data-role="footer" style="background-color: #300;" data-position="fixed" class="header">
-			
-			<h1><font color="#a00" id="czcionka"> (c) McGoris Polska </font></h1>
-			
-		    </div> 
-		</div> 	
-
-<!-- edycja planu 	
-		
-	<div data-role="page" id="planedit" style="background-color: #000;" >
-		
-			<div data-role="header" data-position="fixed" style="background-color: #300;" class="header">
-				<h1><font color="#a00" id="czcionkaa"> Plan obserwacji </font></h1>
-				
-			</div>
-			<div data-role="main" class="ui-content">
-			
-				<div id="pole1" align="center">
-					
-				</div>
-				
-				<div style="background-color: #200; width: 60%; ">
-					<a href="#pageone" style="text-decoration: none;"><button style="background-color: #250000; outline-style: solid; outline-color: #700;"><font color="#900" id="czcionka"> Powrót do strony głównej </button></font> </a>
-				</div>
-				
-			
-
-			
-			<div data-role="footer" style="background-color: #300;" data-position="fixed" class="header">
-			
-			<h1><font color="#a00" id="czcionka"> (c) McGoris Polska </font></h1>
-			
-		    </div> 
-		</div> 			
-		
-
-		
-		
-		
-		<!-- legenda 
-		
-		
-		<div data-role="page" id="legenda" style="background-color: #002;">
-		
-			<div data-role="header" data-position="fixed" style="background-color: #003;">
-				<h1><font color="#bbb"> Legenda </font></h1>
-				
-			</div>
-			<div data-role="main" class="ui-content" >
-			
-			<font color="#bbb">
-				
-				AU - Jednostka astronomiczna 
-				<br>
-				1 AU = 149597871 km.
-				<br>
-				Jest to średnia odległość Ziemi od Słońca.
-				<br>
-				<br>
-				
-				Pc - Parsek
-				<br>
-				1 PC = 3,26 roku świetlnego
-				<br>
-				Jest to odległość, dla której 1 jednostka astronomiczna jest widoczna jako 1 sekunda kątowa.
-				<br>
-				<br>
-				Ly - Rok świetlny
-				<br>
-				1 Ly = 9460528400000 km = 63241 jednostek astronomicznych.
-				<br>
-				Jest to odległość, którą światło przemierza w ciągu roku.
-	
-				
-				
-				</font>	
-				<br>
-				<br>
-				<br>
-			<div align="center">	
-			<a href="#kalkulator" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" style="background-color: #002;"><font color="#bbb"> Powrót </font> </a>	
-			</div>
-			</div>
-				
-			
-
-			
-			<div data-role="footer" style="background-color: #003;" data-position="fixed">
-			
-			<h1><font color="#bbb"> (c) McGoris Polska </font></h1>
-			
-		    </div> 
-		</div> 		
-		
-	-->	
-		
-		
-	</body>
+</body>
 </html>
